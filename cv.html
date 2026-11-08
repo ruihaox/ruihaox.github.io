@@ -1,0 +1,12 @@
+---
+layout: default
+title: CV
+section: cv
+permalink: /cv.html
+---
+{% assign person = site.data.profile %}
+<header class="page-intro"><h1>Curriculum vitae</h1><p>{{ person.name | escape }}</p></header>
+<section class="section">
+{% if person.cv_file != blank %}<p><a href="{{ person.cv_file | relative_url }}">Download CV (PDF) ↗</a></p>{% else %}<p class="quiet-state">A downloadable CV will be added here.</p>{% endif %}
+<p class="cv-links"><a href="{{ '/#education' | relative_url }}">Education</a> · <a href="{{ '/#experience' | relative_url }}">Experience</a> · <a href="{{ '/#research' | relative_url }}">Research</a></p>
+</section>

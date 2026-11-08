@@ -1,0 +1,27 @@
+/* Integration additions; the reference stylesheet is retained in style.css. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.placeholder-logo{display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);border-radius:9px;background:var(--soft);color:var(--accent);font-family:var(--mono);font-size:.8rem}
+.design-credit{margin:13px 0 0;font-size:.7rem}
+.contact-placeholder{color:var(--muted);opacity:.8}
+.social>.contact-item+.contact-item::before{content:'/';color:var(--line);margin:0 7px}
+.collection-search{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 20px;margin:0 0 25px;color:var(--muted);font-size:.85rem}
+.collection-search input{min-width:0;width:min(100%,280px);font:inherit;padding:8px 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;color:var(--ink)}
+.entry-example{display:inline-block;color:var(--muted);font:400 .66rem var(--mono);margin-left:9px;vertical-align:middle}
+.search-empty{margin-top:15px}
+.example-notice{margin:0 0 25px;border-left:2px solid var(--line);padding:8px 14px;color:var(--muted);font-size:.82rem}
+.entry-back{margin:40px 0 30px;font-size:.85rem}
+.prose{overflow-wrap:anywhere;line-height:1.85}
+.prose[lang="zh-CN"]{font-family:"Lato","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;line-height:1.95}
+.prose table{display:block;max-width:100%;overflow:auto;border-collapse:collapse;font-size:.9rem}
+.prose td,.prose th{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left}
+.prose th{background:var(--soft)}
+.prose mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:8px 0}
+.entry-intro{padding-bottom:27px}
+.entry-intro h1{font-size:1.7rem;line-height:1.5}
+.entry-intro .mono-label{font-family:var(--mono);font-size:.75rem;margin-bottom:16px}
+.math-notice{display:none;font-size:.85rem;color:var(--muted);background:var(--soft);padding:12px 15px;border-left:2px solid var(--line)}
+.math-unavailable .math-notice{display:block}
+.cv-links{margin-top:25px;font-size:.9rem}
+.notes .quiet-state{grid-column:1/-1}
+.two-column .section{scroll-margin-top:32px}
+@media(max-width:600px){.collection-search{align-items:stretch;flex-direction:column}.collection-search input{width:100%;font-size:16px}.entry-intro h1{font-size:1.45rem}}

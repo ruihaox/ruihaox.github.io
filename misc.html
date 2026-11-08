@@ -1,0 +1,23 @@
+---
+layout: default
+title: Misc
+section: misc
+permalink: /misc.html
+description: Journal and research notes by ruihaox.
+---
+<header class="page-intro">
+  <h1>Misc</h1>
+  <p>Life beyond the main page: a journal in Chinese, and notes on what I am learning.</p>
+</header>
+<label class="collection-search" for="entry-search"><span>Search Journal &amp; Notes</span><input type="search" id="entry-search" placeholder="Search titles, summaries, or tags" autocomplete="off"></label>
+<p class="sr-only" id="entry-search-status" aria-live="polite"></p>
+<section class="section" id="journal" aria-labelledby="journal-title">
+  <div class="section-head"><h2 id="journal-title">Journal</h2></div>
+  <p class="section-note">Personal reflections, everyday moments, and occasional detours. Written in Chinese.</p>
+  <div lang="zh-CN">{% assign journal_posts = site.posts | where_exp: 'post', "post.categories contains 'diary'" %}{% include entry-list.html posts=journal_posts %}</div>
+</section>
+<section class="section" id="notes" aria-labelledby="notes-title">
+  <div class="section-head"><h2 id="notes-title">Notes</h2></div>
+  <p class="section-note">Reading notes, derivations, and questions worth coming back to.</p>
+  {% assign note_posts = site.posts | where_exp: 'post', "post.categories contains 'research'" %}{% include entry-list.html posts=note_posts %}
+</section>

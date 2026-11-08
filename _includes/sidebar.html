@@ -1,0 +1,24 @@
+<aside class="sidebar" id="top" lang="en">
+  <div class="sidebar-top">
+    <p class="brand"><a href="{{ '/' | relative_url }}">{{ profile.name | escape }}</a></p>
+    <p class="role">{{ profile.role | escape }}</p>
+  </div>
+  <nav class="nav" aria-label="Main navigation" {% if page.section == 'home' %}data-spy{% endif %}>
+    <a href="{% if page.section == 'home' %}#about{% else %}{{ '/#about' | relative_url }}{% endif %}">About</a>
+    <a href="{% if page.section == 'home' %}#research{% else %}{{ '/#research' | relative_url }}{% endif %}">Research</a>
+    <a href="{% if page.section == 'home' %}#education{% else %}{{ '/#education' | relative_url }}{% endif %}">Education</a>
+    <a href="{% if page.section == 'home' %}#experience{% else %}{{ '/#experience' | relative_url }}{% endif %}">Experience</a>
+    <span class="nav-gap" aria-hidden="true"></span>
+    <a href="{{ '/misc.html' | relative_url }}" {% if page.section == 'misc' or page.categories contains 'diary' or page.categories contains 'research' %}aria-current="page"{% endif %}>Misc</a>
+    {% if page.section == 'misc' or page.categories contains 'diary' or page.categories contains 'research' %}
+    <div class="subnav" {% if page.section == 'misc' %}data-spy{% endif %}>
+      <a href="{% if page.section == 'misc' %}#journal{% else %}{{ '/misc.html#journal' | relative_url }}{% endif %}" {% if page.categories contains 'diary' %}aria-current="page"{% endif %}>Journal</a>
+      <a href="{% if page.section == 'misc' %}#notes{% else %}{{ '/misc.html#notes' | relative_url }}{% endif %}" {% if page.categories contains 'research' %}aria-current="page"{% endif %}>Notes</a>
+    </div>
+    {% endif %}
+    <a href="{% if profile.cv_file != blank %}{{ profile.cv_file | relative_url }}{% else %}{{ '/cv.html' | relative_url }}{% endif %}" {% if page.section == 'cv' %}aria-current="page"{% endif %}>CV <span class="arrow" aria-hidden="true">↗</span></a>
+  </nav>
+  <div class="sidebar-foot">
+    <p class="social">{% include contacts.html %}</p>
+  </div>
+</aside>

@@ -1,9 +1,5 @@
 ---
-layout: default
-title: 日记
-section: diary
+layout: redirect
 permalink: /diary/
+redirect_to: /misc.html#journal
 ---
-<header class="page-topline"><span>生活里的小事</span><span lang="en">DAYS & MOMENTS</span></header>
-<header class="collection-header"><div class="eyebrow">01 / DAYS</div><h1>日记<span class="accent">。</span></h1><p>不必每一天都特别，也可以值得记录。</p></header>
-<section class="entries-section"><div class="section-heading"><h2>所有日记</h2><label class="search-box"><span class="visually-hidden">搜索日记标题、摘要和标签</span><input id="post-search" type="search" placeholder="搜索日记" autocomplete="off"></label></div>{% assign diary_posts = site.posts | where_exp: 'post', "post.categories contains 'diary'" %}{% include post-list.html posts=diary_posts %}<p class="visually-hidden" id="search-status" aria-live="polite"></p></section>

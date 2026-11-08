@@ -1,0 +1,36 @@
+# Placeholder records: no degree, affiliation, or research claim is assumed.
+research:
+  - cover: network
+    number: "01 · research"
+    caption: "fig. 1 · connections"
+    title: "Research project title"
+    description: "Describe the research question, your approach, and your contribution."
+    status: ""
+    url: ""
+    link_label: "Project"
+  - cover: codebook
+    number: "02 · research"
+    caption: "fig. 2 · representations"
+    title: "Research project title"
+    description: "Add another research project here, or remove this example from the data file."
+    status: ""
+    url: ""
+    link_label: "Project"
+  - cover: tree
+    number: "03 · research"
+    caption: "fig. 3 · ideas"
+    title: "Research project title"
+    description: "Use this space for a research project, a tool, or a useful experiment."
+    status: ""
+    url: ""
+    link_label: "Project"
+education:
+  - dates: "Dates"
+    institution: "Your institution"
+    degree: "Degree / program"
+    details: "Add your education details here."
+experience:
+  - dates: "Dates"
+    organization: "Your organization"
+    role: "Role / position"
+    details: "Add your research or professional experience here."

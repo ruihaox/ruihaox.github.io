@@ -1,0 +1,9 @@
+<div class="notes" data-entry-list>
+{% for post in include.posts %}
+  <article class="note" data-entry data-search="{{ post.title | append: ' ' | append: post.description | append: ' ' | append: post.tags | escape }}">
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+    <div><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>{% if post.demo %} <span class="entry-example">Example</span>{% endif %}</h3><p>{{ post.description | escape }}</p></div>
+  </article>
+{% else %}<p class="quiet-state">No entries yet.</p>{% endfor %}
+</div>
+<p class="quiet-state search-empty" hidden>No matching entries in this section.</p>

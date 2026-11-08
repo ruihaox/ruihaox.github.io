@@ -1,0 +1,4 @@
+{% assign contacts = site.data.profile %}
+<span class="contact-item">{% if contacts.email != blank %}<a href="mailto:{{ contacts.email | escape }}">Email</a>{% else %}<span class="contact-placeholder" aria-label="Email address has not been added">Email</span>{% endif %}</span>
+<span class="contact-item"><a href="{{ contacts.github | escape }}">GitHub</a></span>
+<span class="contact-item">{% if contacts.linkedin != blank %}<a href="{{ contacts.linkedin | escape }}">LinkedIn</a>{% else %}<span class="contact-placeholder" aria-label="LinkedIn profile has not been added">LinkedIn</span>{% endif %}</span>

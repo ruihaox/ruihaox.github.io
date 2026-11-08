@@ -1,0 +1,21 @@
+Reference source: https://github.com/samxiexs/samxiexs.github.io
+Reference website: https://samxiexs.github.io/
+Original website author: Shen (Sam) Xie.
+
+This adaptation reuses the user-supplied reference stylesheet, appearance controls,
+and generated project-figure code. The interactive flow-field feature has been
+removed at the user's request. The shared page
+structure is adapted to Jekyll, with a separate Misc page for Journal and Notes.
+The original author's biography, affiliations, projects, photographs, CV,
+contact details, and weather location are not presented as ruihaox's information.
+
+The supplied reference archive did not contain a site-wide LICENSE or a reuse
+grant in its README. This notice records provenance; it does not grant rights
+on behalf of the original author. Confirm reuse permission or applicable
+licensing before publishing the derived site.
+
+OpenDyslexic font files are distributed with their supplied SIL Open Font
+License in assets/fonts/OpenDyslexic-OFL.txt.
+
+Other newly written integration files and placeholder content were prepared
+for ruihaox. No additional license is asserted for the reference code.
