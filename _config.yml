@@ -1,0 +1,24 @@
+title: ruihaox
+description: 日常、阅读与科研笔记
+url: https://ruihaox.github.io
+baseurl: ""
+lang: zh-CN
+timezone: America/Los_Angeles
+permalink: /:categories/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  math_engine: mathjax
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - START-HERE.txt
+  - templates
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,9 @@
+---
+layout: default
+title: 科研笔记
+section: research
+permalink: /research/
+---
+<header class="page-topline"><span>在问题之间，慢慢靠近</span><span lang="en">RESEARCH NOTEBOOK</span></header>
+<header class="collection-header"><div class="eyebrow">02 / RESEARCH</div><h1>科研笔记<span class="accent">。</span></h1><p>整理读过的内容，留下推导，也留下疑问。</p></header>
+<section class="entries-section"><div class="section-heading"><h2>所有笔记</h2><label class="search-box"><span class="visually-hidden">搜索笔记标题、摘要和标签</span><input id="post-search" type="search" placeholder="搜索科研笔记" autocomplete="off"></label></div>{% assign research_posts = site.posts | where_exp: 'post', "post.categories contains 'research'" %}{% include post-list.html posts=research_posts %}<p class="visually-hidden" id="search-status" aria-live="polite"></p></section>
