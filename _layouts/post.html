@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="article">
+  <a class="back-link" href="{% if page.categories contains 'diary' %}{{ '/diary/' | relative_url }}{% else %}{{ '/research/' | relative_url }}{% endif %}">← 返回{% if page.categories contains 'diary' %}日记{% else %}科研笔记{% endif %}</a>
+  <header class="article-header">
+    <div class="eyebrow">{% if page.categories contains 'diary' %}DAYS / 日记{% else %}NOTES / 科研笔记{% endif %}</div>
+    <h1>{{ page.title | escape }}</h1>
+    <div class="article-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time>{% if page.demo %}<span class="demo-label">示例文章</span>{% endif %}{% for tag in page.tags %}<span># {{ tag | escape }}</span>{% endfor %}</div>
+  </header>
+  {% if page.demo %}<p class="sample-notice">这是一篇用于试读排版的示例文章，可以替换为你自己的内容。</p>{% endif %}
+  {% if page.math %}<p class="math-notice" role="status">公式暂时未能加载，可以稍后刷新页面。下方保留了公式原文。</p>{% endif %}
+  <div class="prose" id="article-body">{{ content }}</div>
+  <div class="article-end"><span></span><span>写到这里，暂时停笔。</span><span></span></div>
+</article>
