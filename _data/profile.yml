@@ -1,14 +1,14 @@
 # Replace these placeholders with your own information.
-name: Ruihao Xiao
-role: Research, learning, and personal notes
+name: "Ruihao Xiao"
+role: "Research, learning, and personal notes"
 intro: "Hi, I'm Ruihao Xiao. Welcome to my personal website."
 paragraphs:
   - "I use this space to share my research and what I am learning."
-interests: Theoretical Physics
+interests: "Theoretical Physics"
 github: https://github.com/ruihaox
 # Fill these with your own public contact details to activate the two links.
 email: ruihao.xiao@usc.edu
-linkedin: www.linkedin.com/in/ruihao-xiao-027b9a327
+linkedin: https://www.linkedin.com/in/ruihao-xiao-027b9a327/
 # Local file paths, for example /assets/profile.jpg and /assets/cv.pdf.
 portrait: ""
 cv_file: ""
